@@ -1,6 +1,11 @@
 # Image_Captioning using coco dataset and pretrained model
 
 ---
+## encoder vgg16
+
+## decode RNN(GRU)
+
+---
 
 <p>
 
