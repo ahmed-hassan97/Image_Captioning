@@ -2,7 +2,7 @@
 
 ---
 
-![Flowchart](images/22_image_captioning_flowchart.png)
+![Flowchart](https://colab.research.google.com/github/Hvass-Labs/TensorFlow-Tutorials/blob/master/22_Image_Captioning.ipynb#scrollTo=aPgEiTMMZiym&line=1&uniqifier=1)
 
 ---
 
