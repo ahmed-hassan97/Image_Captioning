@@ -1,9 +1,12 @@
 # Image_Captioning using coco dataset and pretrained model
 
 ---
-## encoder vgg16
 
-## decode RNN(GRU)
+- encoder vgg16 (Pretrained model)
+
+- decoder RNN(GRU) 
+
+in this project we alternate between LSTM and GRU to improve accuracy
 
 ---
 
