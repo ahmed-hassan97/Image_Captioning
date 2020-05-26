@@ -10,19 +10,12 @@ in this project we alternate between LSTM and GRU to improve accuracy
 
 ---
 
-<p>
-
-<img src="https://user-images.githubusercontent.com/50107057/82888889-398a9080-9f4a-11ea-9acf-4d8dfad06df4.PNG">
-
-</p>
-
----
 
 ### Table of Contents
 
 
 - [Description](#description)
-- [How To Use](#how-to-use)
+- [Flowchart](#Flowchart)
 - [Technologies](#Technologies)
 - [Link dataset](#dataset)
 - [License](#license)
@@ -51,10 +44,38 @@ In this project we will replace the encoder with an image-recognition model simi
 
 ---
 
-## how-to-use :ear:
+## Flowchart :ear:
 
+We will use the VGG16 model that has been pre-trained for classifying images. But instead of using the last classification 
+
+layer, we will redirect the output of the previous layer. This gives us a vector with 4096 elements that summarizes the image-
+
+contents - similar to how a "thought-vector" summarized the contents of an input-text  on language translation. 
+
+We will use this vector as the initial state of the Gated Recurrent Units (GRU). However, the internal state-size of the GRU is 
+
+only 512, so we need an intermediate fully-connected (dense) layer to map the vector with 4096 elements down to a vector with
+
+only 512 elements.
+
+The decoder then uses this initial-state together with a start-marker "ssss" to begin producing output words. In the first 
+
+iteration it will hopefully output the word "big". Then we input this word into the decoder and hopefully we get the word 
+
+"brown" out, and so on. Finally we have generated the text "big brown bear sitting eeee" where "eeee" marks the end of the text.
+
+The flowchart of the algorithm is roughly:
 
 ---
+
+<p>
+
+<img src="https://user-images.githubusercontent.com/50107057/82888889-398a9080-9f4a-11ea-9acf-4d8dfad06df4.PNG">
+
+</p>
+
+---
+
 
 ## Technologies
 
