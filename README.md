@@ -2,7 +2,11 @@
 
 ---
 
-![Project Image](https://colab.research.google.com/github/Hvass-Labs/TensorFlow-Tutorials/blob/master/22_Image_Captioning.ipynb#scrollTo=aPgEiTMMZiym&line=1&uniqifier=1)
+<p>
+
+<img src="https://user-images.githubusercontent.com/50107057/82888889-398a9080-9f4a-11ea-9acf-4d8dfad06df4.PNG">
+
+</p>
 
 ---
 
