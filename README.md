@@ -19,6 +19,7 @@ in this project we alternate between LSTM and GRU to improve accuracy
 - [Technologies](#Technologies)
 - [instructions](#instructions)
 - [License](#license)
+
 ---
 
 ## Description :point_left:
